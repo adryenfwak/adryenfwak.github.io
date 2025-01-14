@@ -1,18 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700');
+
+
 body {
   margin: 0;
   background: #ffffff;
   font-family: 'Jost', sans-serif;
-
-
+  cursor: url('https://twemoji.maxcdn.com/v/latest/72x72/1f44b.png'), auto; 
+  padding: 20px; 
+  box-sizing: border-box;
 }
 
 
-.home{
+.home {
   display: grid;
   grid-template-rows: auto 1fr 48px;
   min-height: 99vh;
-
 }
+
 
 .header {
   position: sticky;
@@ -24,20 +30,17 @@ body {
   justify-content: center;
   padding: 0 24px;
   font-size: 60px;
-  
-
 }
 
-
-nav.no-mobile{
+nav.no-mobile {
   display: grid;
   grid-template-columns: auto auto auto;
-  gap:28px;
+  gap: 28px;
 }
 
-nav a{
- text-decoration: none;
- color:black; 
+nav a {
+  text-decoration: none;
+  color: black;
 }
 
 a:link {
@@ -53,15 +56,29 @@ a:link {
   font-weight: 100;
   top: 0;
   left: 0;
-
-
 }
 
 
-.title a{
-  text-decoration: black;
-  color:currentColor;
+.title a {
+  font-size: 48px;
+  font-family: 'Jost', sans-serif; 
+  text-decoration: none; 
+  color: #333; 
+  transition: color 0.3s ease; 
 }
+
+.title a:hover {
+  color: blue; 
+}
+
+
+.category {
+  font-size: 18px;
+  font-family: 'Space Mono', monospace;
+  color: #777;
+  margin-top: 5px;
+}
+
 
 .footer,
 .mobile {
@@ -77,24 +94,29 @@ a:link {
   font-size: 30px;
 }
 
-
-
 .row {
   font-family: 'Jost', sans-serif;
   font-size: 20px;
   display: grid;
   border-top: 1.5px solid black;
-  /* justify-items: center; */
   height: 110px;
   margin-bottom: -2px;
   padding-left: 12px;
-  /* z-index: 1; */
 }
+
+
+.fullscreen-image img {
+  width: 100%; 
+  height: 100vh; 
+  object-fit: cover; 
+}
+
 
 .titread {
   display: grid;
   justify-items: center;
   align-self: center;
+  margin-top: 50px; 
 }
 
 .titread p {
@@ -103,13 +125,13 @@ a:link {
   margin-top: 10px;
 }
 
+
 .centered-image {
   display: block;
   margin: 0 auto;
+  max-width: 80%; 
+  margin-top: 50px; 
 }
-
-
-
 
 .center-text {
   text-align: center;
@@ -119,33 +141,30 @@ a:link {
   font-size: 24px;
   font-weight: 100;
   color: #333;
-  text-align: center;
-  font-family: 'Jost', sans-serif;
-
 }
 
-.bottom-text{
+.bottom-text {
   text-align: center;
-  .horizontal-line {
-    border: 1px solid black; /* Épaisseur, style, et couleur de la ligne */
-    margin-top: -60px; /* Ajustez la valeur en fonction de l'espace souhaité */
-    width: 30%;
-  }
-  
+}
+
+.horizontal-line {
+  border: 1px solid black;
+  margin-top: -60px;
+  width: 30%;
 }
 
 .projets {
   font-size: 25px;
-
 }
 
 .center-text {
   text-align: center;
   margin: auto;
-  max-width: 600px; /* Facultatif : limitez la largeur du texte pour une meilleure lisibilité */
+  max-width: 600px;
 }
 
 .underline {
   text-decoration: underline;
 }
+
 
